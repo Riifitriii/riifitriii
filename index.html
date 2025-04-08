@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riifitriii Store - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Riifitriii Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="struk.html">Struk</a>
+    </nav>
+  </header>
+
+  <div id="cart-icon" onclick="toggleCart()">
+    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart" width="30" />
+    <span id="cart-count">0</span>
+  </div>
+
+  <main>
+    <section id="search-sort">
+      <input type="text" id="search-bar" placeholder="Cari produk..." />
+      <select id="sort-dropdown">
+        <option value="">Urutkan</option>
+        <option value="price-asc">Harga Terendah</option>
+        <option value="price-desc">Harga Tertinggi</option>
+        <option value="title-asc">Nama A-Z</option>
+        <option value="title-desc">Nama Z-A</option>
+      </select>
+    </section>
+
+    <section id="product-list">
+      <!-- Produk akan muncul di sini -->
+    </section>
+  </main>
+
+  <aside>
+    <h2>Keranjang Belanja</h2>
+    <ul id="cart-list">
+      <!-- Isi keranjang -->
+    </ul>
+    <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+    <a href="struk.html" class="bg-green-500 text-white px-4 py-2 rounded inline-block mt-3">Lihat Struk</a>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Riifitriii Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

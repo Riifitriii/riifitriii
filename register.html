@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Riifitriii Store</title>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-6 text-center">Register User</h1>
+    <form id="register-form" class="space-y-4">
+      <div>
+        <label for="fullname" class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
+        <input type="text" id="fullname" class="w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+      <div>
+        <label for="new-username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" id="new-username" class="w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+      <div>
+        <label for="new-password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="new-password" class="w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+      <div>
+        <label for="whatsapp" class="block text-sm font-medium text-gray-700">No WhatsApp</label>
+        <input type="text" id="whatsapp" class="w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+      <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600">Daftar</button>
+      <p class="text-sm text-center mt-4">
+        Sudah punya akun?
+        <a href="login.html" class="text-blue-500 hover:underline">Login di sini</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
